@@ -11,7 +11,7 @@ create table produto(
 	nome varchar(50),
 	descricao varchar(200),
 	preco decimal(9,2),
-	foto varchar(1000)
+	foto BLOB
 );
 
 create table pedido(
@@ -38,12 +38,12 @@ create table pedido_item(
 );
 
 insert into usuario(nome, email, senha)
-values('Heber Stein Mazutti', 'heber@teste.com.br', '');
+values('Jonas', 'jonas@teste.com.br', '');
 
 
 insert into produto(nome, descricao, preco, foto)
-values('Spicy Burguer', 'Hamburguer de 250g, queijo, tomate, alface e cebola', 
-       24.90, 'https://jornadajs-food.s3.amazonaws.com/spicy.png');
+values('Spicy Burger', 'Hamburguer de 250g, queijo, tomate, alface e cebola', 
+       24.90, X'BLOB');
 	   
 insert into produto(nome, descricao, preco, foto)
 values('Sanduba', 'Sanduiche natural, alface, tomate, pão integral e orégano', 

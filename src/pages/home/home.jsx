@@ -26,7 +26,7 @@ function Home(){
                 <p className="subtitulo">
                     Clique em adicionar para colocar os produtos na sacola de
                     compras. Se preferir, você pode pedir pelo WhatsApp:
-                    (94) xxxxx-xxxx
+                    (xx) xxxxx-xxxx
                 </p>
             </div>
         </div>
